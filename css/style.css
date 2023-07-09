@@ -162,6 +162,9 @@ body {
     padding: 29px 22px 14px 19px;
     color: #5CE1E6;
     text-align: center;
+    font-family: 'PR', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .banner__p {
@@ -220,10 +223,121 @@ body {
     background: rgba(255, 255, 255, 0.60);
 }
 
+.info {
+    margin-top: 90px;
+}
+
+.info__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info__desc {
+    max-width: 622px;
+}
+
+.info__h {
+    font-family: 'PB', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 24px;
+}
+
+.info__p {
+    font-family: 'PR', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFFB2;
+    margin-bottom: 48px;
+}
+
+.Btn {
+    font-family: 'PR', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #00040E;
+    background: linear-gradient(157.81deg, #DEF9FA -43.27%, #BEF3F5 -21.24%, #9DEDF0 12.19%, #7DE7EB 29.82%, #5CE1E6 51.94%, #33BBCF 90.29%);
+    padding: 19px 33px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.info__main {
+    max-width: 470px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.info__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    background: transparent;
+    width: 100%;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.info__info:hover {
+    background: linear-gradient(153.47deg, rgba(255, 255, 255, 0) -341.94%, #14101D 95.11%);
+    box-shadow: 0px 20px 100px -10px #42475B1A;
+}
+
+.info__info-h {
+    font-family: 'PB', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.info__info-p {
+    font-family: 'BR', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFFB2;
+    margin-top: 8px;
+}
+
+.info__info-img {
+    background: rgba(9, 151, 124, 0.10);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgs {
+    padding: 13px;
+}
+
+.img3 {
+    padding: 13px 14px 13px 13px;
+}
+
 @media screen and (max-width:1180px) {
     .banner__wrap {
         flex-direction: column-reverse;
         gap: 10px;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .info__wrap{
+        flex-direction: column; 
+        gap: 15px;
+    }
+
+    .info__main{
+        max-width: 100%;
     }
 }
 
@@ -335,11 +449,11 @@ body {
 }
 
 @media screen and (max-width:400px) {
-    .num__h{
+    .num__h {
         font-size: 35px;
     }
 
-    .num__p{
+    .num__p {
         font-size: 16px;
     }
 }
