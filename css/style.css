@@ -395,7 +395,7 @@ body {
     gap: 70px;
 }
 
-.feedback__cards{
+.feedback__cards {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -452,27 +452,27 @@ body {
     color: #FFFFFFB2;
 }
 
-.companies{
+.companies {
     margin-top: 90px;
 }
 
-.companies__wrap{
+.companies__wrap {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     align-items: center;
 }
 
-.company{
+.company {
     object-fit: cover;
     width: 192px;
 }
 
-.service{
+.service {
     margin-top: 90px;
 }
 
-.service__card{
+.service__card {
     width: 100%;
     border-radius: 20px;
     background: linear-gradient(154deg, #FFF 0%, #6D6D6D 0%, #11101D 0%);
@@ -482,8 +482,76 @@ body {
     justify-content: space-between;
 }
 
-.service__card-p{
+.service__card-p {
     max-width: 390px;
+}
+
+.footer {
+    margin-top: 120px;
+}
+
+.footer__wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__top-main-p {
+    max-width: 300px;
+    margin-top: 30px;
+}
+
+.footer__top-sections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 130px;
+}
+
+.footer__top-h {
+    font-family: 'PB', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: white;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+.footer__top-p {
+    font-family: 'PR', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFFFFFB2;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.footer__bottom{
+    padding: 30px 0;
+    border-top: 1px solid #3F3E45;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__bottom-p{
+    text-align: center;
+}
+
+.footer__bottom-main{
+    display: flex;
+    gap: 15px;
+}
+
+.footer__wrap-media{
+    display: flex;
+    gap: 20px;
 }
 
 @media screen and (max-width:1180px) {
@@ -492,7 +560,7 @@ body {
         gap: 10px;
     }
 
-    .feedback__cards{
+    .feedback__cards {
         justify-content: center;
         gap: 20px;
     }
@@ -523,31 +591,41 @@ body {
         gap: 20px;
     }
 
-    .service__card{
+    .service__card {
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
     }
-}
 
-@media screen and (max-width:900px){
-    .companies__wrap{
-        grid-template-columns: repeat(2, 1fr);
+    .footer__top-sections{
+        gap: 70px;
     }
 }
 
-@media screen and (max-width:800px){
-    .service__card{
+@media screen and (max-width:900px) {
+    .companies__wrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer__top{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .service__card {
         padding: 52px 50px;
     }
 
-    .service__h{
+    .service__h {
         font-size: 40px;
     }
 }
 
 @media screen and (max-width:630px) {
-    .service__card-btn{
+    .service__card-btn {
         padding: 10px 23px;
     }
 
@@ -627,6 +705,12 @@ body {
     .banner__main-btn {
         display: none;
     }
+
+    .footer__bottom{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
 }
 
 @media screen and (max-width:570px) {
@@ -652,16 +736,24 @@ body {
         height: 400px;
     }
 
-    .feedback__ava-img{
+    .feedback__ava-img {
         object-fit: cover;
         height: 70px;
     }
+
+    .footer__top-sections{
+        gap: 30px;
+    }
 }
 
-@media screen and (max-width:480px){
-    .companies__wrap{
+@media screen and (max-width:480px) {
+    .companies__wrap {
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
+    }
+
+    .footer__top-sections{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -686,25 +778,25 @@ body {
         height: 330px;
     }
 
-    .feedback__p{
+    .feedback__p {
         font-size: 16px;
         line-height: 28px;
     }
 
-    .feedback__ava-h{
+    .feedback__ava-h {
         font-size: 18px;
     }
 
-    .feedback__ava-p{
+    .feedback__ava-p {
         font-size: 14px;
     }
 
-    
-    .service__h{
+
+    .service__h {
         font-size: 32px;
     }
 
-    .service__card{
+    .service__card {
         padding: 32px 30px;
     }
 }
