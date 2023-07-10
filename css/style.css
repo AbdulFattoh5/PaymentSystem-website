@@ -452,6 +452,22 @@ body {
     color: #FFFFFFB2;
 }
 
+.companies{
+    margin-top: 90px;
+}
+
+.companies__wrap{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.company{
+    object-fit: cover;
+    width: 192px;
+}
+
 @media screen and (max-width:1180px) {
     .banner__wrap {
         flex-direction: column-reverse;
@@ -487,6 +503,12 @@ body {
     .card__wrap {
         flex-direction: column-reverse;
         gap: 20px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .companies__wrap{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -595,6 +617,13 @@ body {
     .feedback__ava-img{
         object-fit: cover;
         height: 70px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .companies__wrap{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
     }
 }
 
