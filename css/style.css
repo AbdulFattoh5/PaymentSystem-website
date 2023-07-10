@@ -468,6 +468,24 @@ body {
     width: 192px;
 }
 
+.service{
+    margin-top: 90px;
+}
+
+.service__card{
+    width: 100%;
+    border-radius: 20px;
+    background: linear-gradient(154deg, #FFF 0%, #6D6D6D 0%, #11101D 0%);
+    padding: 72px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service__card-p{
+    max-width: 390px;
+}
+
 @media screen and (max-width:1180px) {
     .banner__wrap {
         flex-direction: column-reverse;
@@ -504,6 +522,12 @@ body {
         flex-direction: column-reverse;
         gap: 20px;
     }
+
+    .service__card{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
 }
 
 @media screen and (max-width:900px){
@@ -512,7 +536,21 @@ body {
     }
 }
 
+@media screen and (max-width:800px){
+    .service__card{
+        padding: 52px 50px;
+    }
+
+    .service__h{
+        font-size: 40px;
+    }
+}
+
 @media screen and (max-width:630px) {
+    .service__card-btn{
+        padding: 10px 23px;
+    }
+
     .header_burger-btn {
         display: block;
         position: fixed;
@@ -659,6 +697,15 @@ body {
 
     .feedback__ava-p{
         font-size: 14px;
+    }
+
+    
+    .service__h{
+        font-size: 32px;
+    }
+
+    .service__card{
+        padding: 32px 30px;
     }
 }
 
