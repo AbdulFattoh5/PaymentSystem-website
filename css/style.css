@@ -404,7 +404,8 @@ body {
 }
 
 .feedback__card {
-    background: transparent;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.00) 0%, #14101D 100%);
+    box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.10);
     padding: 60px 40px;
     border-radius: 20px;
     max-width: 370px;
@@ -413,11 +414,7 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-}
-
-.feedback__card:hover {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.00) 0%, #14101D 100%);
-    box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.10);
+    height: 395px;
 }
 
 .feedback__p {
